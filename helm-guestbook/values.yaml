@@ -24,20 +24,6 @@ app:
     tls:
       enabled: false
       secretName:
-  env:
-    - name: APP_ENV
-      value: "kr2-prod"
-    - name: SCD_CONFIG_PATH
-      value: "/config/scdeploy/scdeploy.yaml"
-  imagePullSecrets:
-    - name: cr-monitoring-kcr-pull-secret
-  volumes:
-    - name: scdeploy-config
-      configMap:
-        name: scdeploy-config
-  volumeMounts:
-    - name: scdeploy-config
-      mountPath: /config/scdeploy
 
 replicaCount: 1
 

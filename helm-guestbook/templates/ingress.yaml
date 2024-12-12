@@ -23,7 +23,7 @@ spec:
               service:
                 name: {{ $.Values.app.name }}-svc
                 port:
-                  number: 8080
+                  number: 80
           {{- end }}
     {{- end }}
   {{ if .Values.app.ingress.tls.enabled }}
