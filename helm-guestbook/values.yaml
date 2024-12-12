@@ -2,6 +2,43 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
+app:
+  name: argocd-app
+  ingress:
+    enabled: true
+    ingressClassName: nginx
+    hosts:
+      - host: test-dev.d.k5d.io
+        paths:
+          - /
+    annotations:
+      nginx.org/server-snippets: |
+        error_page 400 @custom_400;
+        location @custom_400 {
+          return 400 '{"error":"400 bad request"}';
+        }
+        error_page 405 @custom_405;
+        location @custom_405 {
+          return 405 '{"error":"405 not allowed"}';
+        }
+    tls:
+      enabled: false
+      secretName:
+  env:
+    - name: APP_ENV
+      value: "kr2-prod"
+    - name: SCD_CONFIG_PATH
+      value: "/config/scdeploy/scdeploy.yaml"
+  imagePullSecrets:
+    - name: cr-monitoring-kcr-pull-secret
+  volumes:
+    - name: scdeploy-config
+      configMap:
+        name: scdeploy-config
+  volumeMounts:
+    - name: scdeploy-config
+      mountPath: /config/scdeploy
+
 replicaCount: 1
 
 image:
