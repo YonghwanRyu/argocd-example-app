@@ -8,7 +8,7 @@ app:
     enabled: true
     ingressClassName: nginx
     hosts:
-      - host: test-dev.d.k5d.io
+      - host: test1-dev.d.k5d.io
         paths:
           - /
     annotations:
