@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: production
+  name: canary
   labels:
-    app: production
+    app: canary
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: production
+      app: canary
   template:
     metadata:
       labels:
-        app: production
+        app: canary
     spec:
       containers:
-        - name: production
+        - name: canary
           image: mirrorgooglecontainers/echoserver:1.10
           ports:
             - containerPort: 8080
