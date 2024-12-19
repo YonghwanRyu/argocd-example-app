@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: canary
+  name: production
   annotations:
     kubernetes.io/ingress.class: nginx
 spec:
@@ -13,6 +13,6 @@ spec:
             path: "/"
             backend:
               service:
-                name: canary
+                name: production
                 port:
                   number: 80
