@@ -28,8 +28,8 @@ app:
 replicaCount: 1
 
 image:
-  repository: mirrorgooglecontainers/echoserver
-  tag: 1.10
+  repository: gcr.io/heptio-images/ks-guestbook-demo
+  tag: 0.1
   pullPolicy: IfNotPresent
 
 containerPort: 80
