@@ -9,8 +9,16 @@ spec:
   template:
     spec:
       containers:
-      - name: sleep
-        image: alpine:latest
-        command: ["sleep", "10"]
+      - name: sync-pre-job
+        image: curlimages/curl
+        command:
+        - curl
+        - "-X"
+        - POST
+        - "-H"
+        - "Content-Type: application/json"
+        - "-d"
+        - '{"Result": "Pre"}'
+        - "http://localhost:8080/8ecf5c9b-0dcc-471c-953d-30dcb83762a2/sync/hook"
       restartPolicy: Never
   backoffLimit: 0
