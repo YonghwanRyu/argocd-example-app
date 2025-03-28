@@ -4,6 +4,8 @@ metadata:
   name: production
   annotations:
     kubernetes.io/ingress.class: nginx
+  labels:
+    custom: happy
 spec:
   rules:
     - host: test-dev.d.k5d.io
