@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: production
+  name: production-svc
   labels:
     app: production
     custom: happy
