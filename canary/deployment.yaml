@@ -4,6 +4,7 @@ metadata:
   name: production
   labels:
     app: production
+    custom: production
 spec:
   replicas: 1
   selector:
