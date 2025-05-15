@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: production
-          image: mirrorgooglecontainers/echoserver:1.10
+          image: k8s.gcr.io/echoserver-arm:1.8
           ports:
             - containerPort: 8080
           env:
