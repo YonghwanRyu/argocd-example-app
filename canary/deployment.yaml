@@ -4,7 +4,6 @@ metadata:
   name: production
   labels:
     app: production
-    custom: hapx1
 spec:
   replicas: 1
   selector:
