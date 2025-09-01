@@ -9,18 +9,8 @@ spec:
   template:
     spec:
       containers:
-      - name: sync-pre-job
-        image: curlimages/curl
-        command:
-        - curl
-        - "-X"
-        - POST
-        - "-H"
-        - "Content-Type: application/json"
-        - "-H"
-        - "X-Auth-Token: gAAAAABne3KehrxKLF90gxjOaANrHhri3AtYRuo6jTuT6Qnjz0G2Pj8GlO5B5f1XJwNTQKUC1dxrAXgHCX6bo7CHNPXy7iL83iag46m3INAjGOoQs5IRmAwOS4K3Psni3QyRbMx1S0maukg-KaJvBH5SjIrEAKE9jdvaMeMdcB1XCBb8kd2p_vc"
-        - "-d"
-        - '{"Result": "Pre"}'
-        - "http://host.docker.internal:8080/applications/8ecf5c9b-0dcc-471c-953d-30dcb83762a2/sync/hook"
+      - name: sleep
+        image: alpine:latest
+        command: ["sleep", "10"]
       restartPolicy: Never
   backoffLimit: 0
