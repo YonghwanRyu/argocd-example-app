@@ -6,6 +6,7 @@ metadata:
     app: production
     custom: happy
     axz: axz
+    def: zxc
 spec:
   replicas: 1
   selector:
