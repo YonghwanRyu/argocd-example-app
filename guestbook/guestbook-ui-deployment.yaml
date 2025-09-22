@@ -4,7 +4,6 @@ metadata:
   name: guestbook-ui-deployment
   labels:
     custom: happy
-    abc: def
 spec:
   replicas: 1
   revisionHistoryLimit: 3
