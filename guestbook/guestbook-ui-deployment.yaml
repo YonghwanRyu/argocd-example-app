@@ -6,6 +6,7 @@ metadata:
     custom: happy
     axc: axz
     def: gax
+    zxc: zcx
 spec:
   replicas: 1
   revisionHistoryLimit: 3
