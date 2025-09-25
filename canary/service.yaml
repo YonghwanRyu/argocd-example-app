@@ -4,7 +4,6 @@ metadata:
   name: production-svc
   labels:
     app: production
-    custom: happy
 spec:
   ports:
     - port: 80
