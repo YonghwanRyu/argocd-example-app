@@ -5,7 +5,6 @@ metadata:
   labels:
     custom: happy
     axc: axz
-    def: zxa
 spec:
   replicas: 1
   revisionHistoryLimit: 3
