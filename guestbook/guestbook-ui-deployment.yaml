@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: guestbook-ui-deployment
   labels:
-    custom: happ
+    custom: happy
 spec:
   replicas: 1
   revisionHistoryLimit: 3
