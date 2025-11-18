@@ -6,7 +6,7 @@ metadata:
     custom: happy
     cx: ca
 spec:
-  replicas: ca
+  replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
