@@ -4,7 +4,6 @@ metadata:
   name: guestbook-ui
   labels:
     custom: happy
-    xx: zz
 spec:
   replicas: 1
   revisionHistoryLimit: 3
