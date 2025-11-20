@@ -5,6 +5,7 @@ metadata:
   labels:
     custom: happy
     ca: asx
+    cz: caz
 spec:
   replicas: 1
   revisionHistoryLimit: 3
