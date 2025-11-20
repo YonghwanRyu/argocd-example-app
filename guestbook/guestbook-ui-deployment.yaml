@@ -5,6 +5,7 @@ metadata:
   labels:
     custom: happy
     zz: cc
+    cc: dd
 spec:
   replicas: 1
   revisionHistoryLimit: 3
