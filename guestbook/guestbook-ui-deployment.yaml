@@ -4,8 +4,6 @@ metadata:
   name: guestbook-ui-deployment
   labels:
     custom: happy
-    casz: zxcxz
-    ccc: zzxcas
 spec:
   replicas: 1
   revisionHistoryLimit: 3
