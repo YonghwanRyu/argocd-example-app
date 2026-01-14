@@ -5,7 +5,6 @@ metadata:
   labels:
     custom: happy
     casz: zxcxz
-    xxx: asc
 spec:
   replicas: 1
   revisionHistoryLimit: 3
