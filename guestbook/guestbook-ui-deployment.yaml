@@ -5,6 +5,7 @@ metadata:
   labels:
     custom: happy
     cccc: acscas
+    qsw: scz
 spec:
   replicas: 1
   revisionHistoryLimit: 3
